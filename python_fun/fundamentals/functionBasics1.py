@@ -16,9 +16,16 @@
 #outcome: Error 
 
 #3
-def number_of_books_on_hold():
-    return 5
-    return 10
-print(number_of_books_on_hold())
+# def number_of_books_on_hold():
+#     return 5
+#     return 10
+# print(number_of_books_on_hold())
 
 #prediction: 5, only returns the first one. 
+
+#4
+def number_of_fingers():
+    return 5
+    print(10)
+print(number_of_fingers())
+#prediction:5 in the rerturn statement b/c its before the print statement  
