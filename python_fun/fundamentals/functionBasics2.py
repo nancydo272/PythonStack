@@ -21,7 +21,11 @@ print(print_and_return([1,2]))
 # returns the sum of the first value in the list plus the list's length.
     # Example: first_plus_length([1,2,3,4,5]) should 
     # return 6 (first value: 1 + length: 5)
+def first_plus_length(arr):
+    sum = arr[0]+ len(arr)
+    return sum
 
+print(first_plus_length([1,2,3,4,5]))
 # 4.Values Greater than Second - Write a function that accepts a list and 
 # creates a new list containing only the values from the original list that are 
 # greater than its 2nd value. Print how many values this is and then return 
