@@ -33,9 +33,20 @@ print(first_plus_length([1,2,3,4,5]))
     # Example: values_greater_than_second([5,2,3,2,1,4]) should print 3 and 
     # return [5,3,4]
     # Example: values_greater_than_second([3]) should return False
-def values_greater_than_second(list):
 
+
+def values_greater_than_second(list):
+    if len(list)<2:
+        return False
+    betterList = []
+    for x in range(0, len(list)):
+        if list[x] > list[1]:
+            betterList.append(list[x])
+    return betterList
 print(values_greater_than_second([5,2,3,2,1,4]))
+print(values_greater_than_second([3]))
+
+# print(values_greater_than_second([5,2,3,2,1,4]))
 # 5.This Length, That Value - Write a function that accepts two integers as 
 # parameters: size and value. The function should create and return a 
 # list whose length is equal to the given size, and whose values are all the 
