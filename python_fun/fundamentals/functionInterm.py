@@ -16,11 +16,34 @@ sports_directory = {
 }
 z = [ {'x': 10, 'y': 20} ]
 
-x[1][0]= 15
-print(x)
+# x[1][0]= 15
+# print(x)
 
-students[0]['lastname'] = 'Bryant'
-print(students)
+# students[0]['lastname'] = 'Bryant'
+# print(students)
 
-sports_directory['soccer'][0] = 'Andres'
-print(sports_directory)
+# sports_directory['soccer'][0] = 'Andres'
+# print(sports_directory)
+
+#2. Iterate throufh the list of dictionaries 
+students1 = [
+    {'first_name':  'Michael', 'last_name' : 'Jordan'},
+    {'first_name' : 'John', 'last_name' : 'Rosales'},
+    {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+    {'first_name' : 'KB', 'last_name' : 'Tonel'}
+    ]
+def iterateDictionary(li):
+    for x in range(0,len(li)):
+        output = ""
+        for key, val in li[x].items():
+            output += f"{key} - {val},"
+        print(output)
+    return output
+
+iterateDictionary(students1)
+# should output: (it's okay if each key-value pair ends up on 2 separate lines;
+# bonus to get them to appear exactly as below!)
+# first_name - Michael, last_name - Jordan
+# first_name - John, last_name - Rosales
+# first_name - Mark, last_name - Guillen
+# first_name - KB, last_name - Tonel
