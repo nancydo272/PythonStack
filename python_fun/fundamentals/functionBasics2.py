@@ -53,3 +53,10 @@ print(values_greater_than_second([3]))
 # given value.
     # Example: length_and_value(4,7) should return [7,7,7,7]
     # Example: length_and_value(6,2) should return [2,2,2,2,2,2]
+def length_and_value(size, value):
+    list = []
+    for x in range(0, size):
+        list.append(value)
+    return list
+print(length_and_value(4,7))
+print(length_and_value(6,2))
