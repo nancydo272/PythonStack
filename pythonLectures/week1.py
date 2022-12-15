@@ -49,51 +49,27 @@ print(weekend)
 #delete values 2 Ways 
 
 removed_value = weekend.pop('Sat') 
-
 print(removed_value)    #Saturday 
-
-print(weekend)                                 #{'Sun': 'Sunday', 'Fri': 'Friday'} 
-
- 
+print(weekend)          #{'Sun': 'Sunday', 'Fri': 'Friday'} 
 
 del weekend['Fri']  
-
-print(weekend)                                 #{'Sun': 'Sunday'} 
-
- 
+print(weekend)          #{'Sun': 'Sunday'} 
 
 weekday = {'Mon':'Monday', 'Tue':'Tuesday', 'Wed':'Wednesday', 'Thur':'Thursday'} 
-
- 
-
-print(len(weekday))                        #4 
-
+print(len(weekday))      #4
 print(str(weekday)) 
-
 print(type(weekday))      #<class 'dict'> 
 
- 
 
 #dictionary.items() -- returns a list of dictionary's (key, value) tuple pairs. 
 
 print(weekday.items())   
-
-                #dict_items([('Mon', 'Monday'), ('Tue', 'Tuesday'),                              ('Wed', 'Wednesday'), ('Thur', 'Thursday')]) 
-
-     
-
+    #dict_items([('Mon', 'Monday'), ('Tue', 'Tuesday'), ('Wed', 'Wednesday'), ('Thur', 'Thursday')]) 
 print(weekday.keys()) 
-
-                #dict_keys(['Mon', 'Tue', 'Wed', 'Thur']) 
-
-     
+    #dict_keys(['Mon', 'Tue', 'Wed', 'Thur']) 
 
 print(weekday.values()) 
-
-                #dict_values(['Monday', 'Tuesday', 'Wednesday', 'Thursday']) 
-
-     
+    #dict_values(['Monday', 'Tuesday', 'Wednesday', 'Thursday']) 
 
 print(weekend.clear())  
-
-                #none since it removes all elements from the dictionary 
+    #none since it removes all elements from the dictionary 
